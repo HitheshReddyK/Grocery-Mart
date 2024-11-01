@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Market Form</title>
+    <link rel='stylesheet' href='./style.css'/>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>Grocery Market Order Form</h2>
+            <p>Please fill in your details and order information</p>
+        </div>
+        
+        <form id="groceryForm">
+            <div class="row">
+                <div class="col form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="col form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="row">
+                <div class="col form-group">
+                    <label for="deliveryDate">Preferred Delivery Date</label>
+                    <input type="date" id="deliveryDate" name="deliveryDate" required>
+                </div>
+
+                <div class="col form-group">
+                    <label for="deliveryTime">Preferred Time</label>
+                    <select id="deliveryTime" name="deliveryTime" required>
+                        <option value="">Select Time</option>
+                        <option value="morning">Morning (9AM - 12PM)</option>
+                        <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                        <option value="evening">Evening (4PM - 8PM)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="specialInstructions">Special Instructions</label>
+                <textarea id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
